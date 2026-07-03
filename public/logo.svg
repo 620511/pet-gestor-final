@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#122030"/>
+      <stop offset="100%" stop-color="#080f1a"/>
+    </radialGradient>
+    <linearGradient id="g" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#86efac"/>
+      <stop offset="100%" stop-color="#22c55e"/>
+    </linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="3" stdDeviation="3.5"
+      flood-color="#000" flood-opacity="0.4"/></filter>
+  </defs>
+  <rect width="200" height="200" rx="44" fill="url(#bg)"/>
+  <circle cx="100" cy="100" r="84" fill="none" stroke="#4ade80"
+          stroke-width="1" opacity="0.15"/>
+  <g fill="url(#g)" filter="url(#sh)">
+    <!-- Pad central -->
+    <ellipse cx="100" cy="118" rx="22" ry="17"/>
+    <!-- Dedo esquerda-baixo -->
+    <ellipse cx="63"  cy="97"  rx="10.5" ry="12.5"/>
+    <!-- Dedo esquerda-alto -->
+    <ellipse cx="82"  cy="79"  rx="10.5" ry="12.5"/>
+    <!-- Dedo direita-alto -->
+    <ellipse cx="118" cy="79"  rx="10.5" ry="12.5"/>
+    <!-- Dedo direita-baixo -->
+    <ellipse cx="137" cy="97"  rx="10.5" ry="12.5"/>
+  </g>
+  <!-- Highlight -->
+  <ellipse cx="97" cy="112" rx="9" ry="7" fill="#b0fad0" opacity="0.35"/>
+  <!-- Texto -->
+  <text x="100" y="162" text-anchor="middle"
+        font-family="Arial Black,Arial,sans-serif"
+        font-size="17" font-weight="900"
+        fill="#4ade80" opacity="0.85" letter-spacing="0.5">PetGestor</text>
+</svg>
